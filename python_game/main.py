@@ -376,13 +376,13 @@ def main():
             draw_text(screen, "Pygame Edition · Minimax AI · Persistent Leaderboard", font_small, COLOR_TEXT_MUTED, SCREEN_WIDTH // 2, 98)
 
             # --- MODE SELECTION ---
-            draw_text(screen, "1. Select Game Mode:", font_heading, COLOR_TEXT_PRIMARY, SCREEN_WIDTH // 2, 138)
+            draw_text(screen, "1. Select Game Mode:", font_heading, COLOR_TEXT_PRIMARY, SCREEN_WIDTH // 2, 125)
             draw_button(screen, "Solo vs AI (Computer)", font_button, btn_mode_pvc, mouse_pos, active=(selected_mode == "PVC"))
             draw_button(screen, "Player vs Player (PvP)", font_button, btn_mode_pvp, mouse_pos, active=(selected_mode == "PVP"))
 
             # --- DIFFICULTY (Only if Solo) ---
             if selected_mode == "PVC":
-                draw_text(screen, "2. AI Difficulty Level:", font_heading, COLOR_TEXT_PRIMARY, SCREEN_WIDTH // 2, 222)
+                draw_text(screen, "2. AI Difficulty Level:", font_heading, COLOR_TEXT_PRIMARY, SCREEN_WIDTH // 2, 210)
                 draw_button(screen, "Easy (Casual)", font_regular, btn_diff_easy, mouse_pos, active=(selected_difficulty == "Easy"))
                 draw_button(screen, "Medium (Blocker)", font_regular, btn_diff_med, mouse_pos, active=(selected_difficulty == "Medium"))
                 draw_button(screen, "Unbeatable (Minimax)", font_regular, btn_diff_hard, mouse_pos, active=(selected_difficulty == "Hard"), accent_color=(56, 189, 248))
